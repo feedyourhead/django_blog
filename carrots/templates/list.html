@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+	<ul> 
+		<!-- komentarz html -->
+		{# django comment: displays list of posts #}
+		{% for post in posty %}
+			<li><a href='{% url "pokaz" post.id %}'> {{ post.title }} </a></li>
+		{% endfor %}
+</body>
+
+</html>
